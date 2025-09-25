@@ -82,17 +82,22 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-    }
-}
-public static recolectarMeteoritos (int Meteoritos){
-    for(int i=1; i<10; i++){
-        System.out.println("Progreso:" + "%");
-    }
-    System.out.println();
-    {
+            System.out.println("Digite el numero de meteoritos a recolectar:");
+            int cuantidad = sc.nextInt();
 
+            recolectarMeteoritos(cuantidad);
     }
 
+    public static void recolectarMeteoritos (int meteoritos) {
+        for (int i = 1; i <= 10; i++) {
+                int progreso = (i*100)/10;
+
+                    System.out.println("Meteorito"
+                            + i + "de " + meteoritos + "recogido. Progreso: " + progreso + "%");
+            }
+        System.out.println("Misión de recolección completada.");
+    }
 }
+
 
 
