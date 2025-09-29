@@ -62,9 +62,9 @@ import java.util.Scanner;
 //    }
 //    public static void comprobarNivelOxigeno(int porcentajeOxigenio){
 //            if (porcentajeOxigenio >= 80 && porcentajeOxigenio <= 100) {
-//                System.out.println("Nivel óptimo");
+//                System.out.println("Nivel óptimo.");
 //            } else if (porcentajeOxigenio >= 40 && porcentajeOxigenio <= 79) {
-//                System.out.println("Nivel bajo,se requiere reabastecimiento");
+//                System.out.println("Nivel bajo,se requiere reabastecimiento.");
 //                } else {
 //                    System.out.println("Nivel crítico,evacuación de la cabina.");
 //                }
@@ -78,26 +78,62 @@ import java.util.Scanner;
 //mensaje por cada meteorito recogido y mostrando el progreso total (ej: "Meteorito 1 de 10
 //recogido. Progreso: 10%"). Al finalizar el bucle, imprime "Misión de recolección completada"
 
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Digite el numero de meteoritos a recolectar:");
+//        int meteorito = 10;
+//
+//        recolectarMeteoritos(meteorito);
+//    }
+//
+//    public static void recolectarMeteoritos(int numMeteoritos) {
+//        Scanner sc = new Scanner(System.in);
+//        int contador = 0;
+//
+//        for (int i = 1; i <= numMeteoritos; i++) {
+//            System.out.println("Recolecte el meteorito " + i + ":");
+//            int meteorito = sc.nextInt();
+//
+//            int progreso = i * 10;
+//            contador++;
+//
+//            System.out.println("Meteorito "
+//                                + i + " de "
+//                                + numMeteoritos
+//                                + " recogido. Progreso: "
+//                                + progreso + " %.");
+//        }
+//            System.out.println("Misión de recolección completada.");
+//    }
+//
+//}
+
+//4. Búsqueda de Satélites Activos
+//Escribe una función buscarSatelites que reciba un código de satélite (String). Dentro de
+//la función, usa una estructura switch para determinar el estado del satélite. Si el código es "SATA", "SAT-B" o "SAT-C", imprime "Satélite activo, transmitiendo datos". Si el código es "SAT-D" o
+//"SAT-E", imprime "Satélite inactivo, requiere mantenimiento". Para cualquier otro código, informa
+//"Código de satélite desconocido". En el programa principal, usa un bucle while para permitir que
+//el usuario consulte el estado de varios satélites hasta que escriba "FIN"
+
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-            System.out.println("Digite el numero de meteoritos a recolectar:");
-            int cuantidad = sc.nextInt();
 
-            recolectarMeteoritos(cuantidad);
-    }
 
-    public static void recolectarMeteoritos (int meteoritos) {
-        for (int i = 1; i <= 10; i++) {
-                int progreso = (i*100)/10;
 
-                    System.out.println("Meteorito"
-                            + i + "de " + meteoritos + "recogido. Progreso: " + progreso + "%");
+        }
+
+    public static void buscarSatelites(String codSatelite){
+        switch(codSatelite){
+            case "1":
+
+                while{
+                    2, 3, 4,5
+
             }
-        System.out.println("Misión de recolección completada.");
+        }
     }
 }
-
 
 
