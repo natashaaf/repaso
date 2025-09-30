@@ -119,21 +119,33 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-
-
+        String opcionUsuario =
+        String buscarSatelites(codSateliUsuario);
         }
 
-    public static void buscarSatelites(String codSatelite){
-        switch(codSatelite){
-            case "1":
+    public static String buscarSatelites(String codSatelite){
+        Scanner sc = new Scanner(System.in);
+        String codSateliteUsuario = sc.nextLine();
 
-                while{
-                    2, 3, 4,5
+        switch(codSatelite.toLowerCase()) {
+            case "SATSTXA":
+                return "Satélite activo, transmitiendo datos.";
+            case "SAT-B":
+                return "Satélite activo, transmitiendo datos.";
+            case "SAT-C":
+                return "Satélite activo, transmitiendo datos.";
+            case "SAT-D":
+                return "Satélite inactivo, requiere mantenimiento.";
+            case "SAT-E":
+                return "Satélite inactivo, requiere mantenimiento.";
 
-            }
+            default:
+                return "Código de satélite desconocido.";
         }
-    }
+        while(buscarSatelitrrres){
+            2, 3, 4,5
+
+        }
 }
 
 
